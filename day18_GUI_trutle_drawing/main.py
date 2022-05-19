@@ -20,11 +20,14 @@ def turn_right():
 def turn_left():
     h = tim.heading() - 10
     tim.setheading(h)
+
+
 def clear():
     tim.clear()
     tim.penup()
     tim.home()
     tim.pendown()
+
 
 screen.listen()
 screen.onkey(key="w", fun=move_forward)
